@@ -18,7 +18,7 @@ jobs:
           node-version: '16.13'
       - run: node --version
           
-      - run: npm i
+      - run: pnpm i
 
       - save_cache:
           paths:
