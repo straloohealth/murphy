@@ -17,15 +17,7 @@ jobs:
           install-yarn: true
           node-version: '16.13'
       - run: node --version
-          
-      - run: apt-get update && apt-get install -y curl
-      - restore_cache:
-          keys:
-            - v2-dependencies-{{ checksum "package.json" }}
-            - v2-dependencies-
-
-      - run: npm ci
-
+      
       - save_cache:
           paths:
             - ~/.npm
