@@ -17,7 +17,9 @@ jobs:
           install-yarn: true
           node-version: '16.13'
       - run: node --version
-      
+          
+      - run: npm i
+
       - save_cache:
           paths:
             - ~/.npm
