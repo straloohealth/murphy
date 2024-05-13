@@ -15,7 +15,7 @@ jobs:
       - checkout  
       - node/install:
           install-yarn: true
-          node-version: '16.13'
+          node-version: '18.20.2'
       - run: node --version
           
       - run: yarn
